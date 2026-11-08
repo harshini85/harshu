@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Diwali - From Harshini</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #19002e, #65004d, #ff6600);
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        .container {
+            padding: 60px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .diya {
+            font-size: 75px;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                filter: drop-shadow(0 0 10px orange);
+                transform: scale(1);
+            }
+            to {
+                filter: drop-shadow(0 0 35px yellow);
+                transform: scale(1.1);
+            }
+        }
+
+        h1 {
+            font-size: clamp(38px, 8vw, 65px);
+            color: #ffdf70;
+            text-shadow: 0 0 20px orange;
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-size: 27px;
+            color: #ffe6a3;
+            margin-bottom: 25px;
+        }
+
+        .message {
+            max-width: 650px;
+            font-size: 20px;
+            line-height: 1.8;
+            background: rgba(255,255,255,0.12);
+            border: 2px solid #ffd700;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 0 25px rgba(255,215,0,0.3);
+        }
+
+        .highlight {
+            color: #ffdf70;
+            font-weight: bold;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(45deg, #ffcc00, #ff6600);
+            color: #4a0033;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px gold;
+        }
+
+        #surprise {
+            display: none;
+            font-size: 25px;
+            margin-top: 25px;
+            color: #ffe68a;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        .footer {
+            margin-top: 45px;
+            font-size: 16px;
+            color: #ffe6b3;
+        }
+
+        .stars {
+            font-size: 25px;
+            margin: 20px;
+            animation: sparkle 2s infinite alternate;
+        }
+
+        @keyframes sparkle {
+            from { opacity: 0.5; }
+            to { opacity: 1; }
+        }
+
+        .fireworks {
+            font-size: 30px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="stars">✨ 🌟 ✨ 🪔 ✨ 🌟 ✨</div>
+
+        <div class="diya">🪔</div>
+
+        <h1>Happy Diwali!</h1>
+
+        <h2>Spread Love, Light & Happiness 💛</h2>
+
+        <div class="message">
+            Dear Family & Friends ❤️,
+
+            <br><br>
+
+            May this beautiful festival of lights
+            fill your lives with endless
+            <span class="highlight">JOY, FUN & LAUGHTER!</span>
+
+            <br><br>
+
+            May your homes shine with happiness,
+            your hearts overflow with love,
+            and your lives sparkle with success
+            and countless beautiful memories.
+
+            <br><br>
+
+            Wishing you all a Diwali filled with
+            sweet moments, bright beginnings,
+            delicious sweets and unforgettable celebrations!
+
+            <br><br>
+
+            <span class="highlight">
+                Have a safe, sparkling and wonderful Diwali! 🎆
+            </span>
+
+            <br><br>
+
+            With lots of love,<br>
+            <span class="highlight">Harshini ❤️</span>
+        </div>
+
+        <button onclick="showSurprise()">
+            Click for a Diwali Surprise! 🎁
+        </button>
+
+        <div id="surprise">
+            🎆 ✨ HAPPY DIWALI! ✨ 🎆
+            <br>
+            Keep Smiling, Keep Shining! 💖
+        </div>
+
+        <div class="fireworks">
+            🎇 🎆 🪔 🎆 🎇
+        </div>
+
+        <div class="footer">
+            Made with ❤️ and lots of love by
+            <br>
+            <strong>Harshini</strong>
+            <br><br>
+            © 2026 | My Diwali Wishes Website
+        </div>
+
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById("surprise").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
